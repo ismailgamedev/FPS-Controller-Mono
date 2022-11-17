@@ -14,7 +14,7 @@ config/name="First Person Controller Mono"
 config/description="FPS Character for Godot 4.0 beta4 Mono"
 run/main_scene="res://fpscontroller/World.tscn"
 config/features=PackedStringArray("4.0")
-config/icon="res://addons/fpscontroller/icon.png"
+config/icon="res://fpscontroller/logo.png"
 
 [debug]
 
