@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://fpscontroller/objects/player/Player.cs" id="1_in0cl"]
+[ext_resource type="Environment" uid="uid://wukgnpp0mr0y" path="res://default_env.tres" id="2_blcls"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1i50u"]
+
+[node name="Player" type="CharacterBody3D"]
+floor_max_angle = 1.48353
+script = ExtResource("1_in0cl")
+acceleration = 0.38
+LookCameraSensivity = 0.003
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_1i50u")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.645009, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00552398, 0.00203115, -0.000968576)
+environment = ExtResource("2_blcls")
+doppler_tracking = 2
+current = true
+fov = 60.0
+near = 0.3
+far = 1000.0
+
+[node name="CanStandUpRay" type="RayCast3D" parent="."]
+target_position = Vector3(0, 1.1, 0)

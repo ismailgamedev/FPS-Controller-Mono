@@ -1,0 +1,21 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://wukgnpp0mr0y"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_d41vn"]
+
+[sub_resource type="Sky" id="Sky_rdgq1"]
+sky_material = SubResource("PhysicalSkyMaterial_d41vn")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_rdgq1")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 3
+ssao_enabled = true
+ssil_enabled = true
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 1.0
+glow_bloom = 1.0
+adjustment_contrast = 1.18
+adjustment_saturation = 1.06

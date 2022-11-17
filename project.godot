@@ -1,0 +1,99 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="First Person Controller Mono"
+config/description="FPS Character for Godot 4.0 beta4 Mono"
+run/main_scene="res://fpscontroller/World.tscn"
+config/features=PackedStringArray("4.0")
+config/icon="res://addons/fpscontroller/icon.png"
+
+[debug]
+
+settings/stdout/print_fps=true
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1152
+window/size/window_height_override=648
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="PlanetSurvival"
+
+[editor]
+
+movie_writer/movie_file="C:/Users/ismai/Desktop/showcase.avi"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[input]
+
+Move_Backward={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"unicode":0,"echo":false,"script":null)
+]
+}
+Move_Forward={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"unicode":0,"echo":false,"script":null)
+]
+}
+Move_Left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"unicode":0,"echo":false,"script":null)
+]
+}
+Move_Right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"unicode":0,"echo":false,"script":null)
+]
+}
+Jump={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"unicode":0,"echo":false,"script":null)
+]
+}
+Sprint={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"unicode":0,"echo":false,"script":null)
+]
+}
+Crouch={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194326,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[rendering]
+
+driver/threads/thread_model=2
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=5
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=5
+reflections/sky_reflections/fast_filter_high_quality=true
+global_illumination/voxel_gi/quality=1
+textures/default_filters/anisotropic_filtering_level=4
+scaling_3d/mode=1
+global_illumination/sdfgi/probe_ray_count=5
+global_illumination/sdfgi/frames_to_update_lights=0
+anti_aliasing/quality/msaa_3d=3
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_taa=true
+anti_aliasing/quality/use_debanding=true
+lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv=3
+lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv=4
+lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv=5
+lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv=6
