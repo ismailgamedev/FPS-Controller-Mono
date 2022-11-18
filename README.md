@@ -1,4 +1,7 @@
 # FPS-Controller-Mono
+
+!!! DON'T FORGET TO ADD INPUTS AND CREATE A NEW C# SCRIPTS !!!
+
 Fps Controller for Godot 4 Mono
 ![logo](https://user-images.githubusercontent.com/64804972/202565137-c6351062-6c96-440c-965e-dc6953588dd7.png)
 ![image](https://user-images.githubusercontent.com/64804972/202480880-5caaa9b3-e56b-4768-9b51-153611bc6400.png)
